@@ -24,10 +24,11 @@ def bisection(f,a,b,tol):
     
   return (a+b)/2
 
-f=lambda x: x**2-x-1
-approx_phi = bisection(f,1,2,0.001)
-print("Solution for x^2-x-1 = 0:\nx = {:5f}\tIterations: {}".format(approx_phi[0],approx_phi[1]))
+if __name__=="__main__":
+  f=lambda x: x**2-x-1
+  approx_phi = bisection(f,1,2,0.001)
+  print("Solution for x^2-x-1 = 0:\nx = {:5f}\tIterations: {}".format(approx_phi[0],approx_phi[1]))
 
-f=lambda x: x**3-x-1
-sol = bisection(f,1,2,0.001)
-print("Solution for x^3-x-1 = 0:\nx = {:5f}\tIterations: {}".format(sol[0],sol[1]))
+  f=lambda x: x**3-x-1
+  sol = bisection(f,1,2,0.001)
+  print("Solution for x^3-x-1 = 0:\nx = {:5f}\tIterations: {}".format(sol[0],sol[1]))
