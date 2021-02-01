@@ -1,5 +1,5 @@
 """
-This code does not involve 
+This code does not involve tolerance level
 """
 def bisection(f,a,b,N):
   if f(a)*f(b)>0:
